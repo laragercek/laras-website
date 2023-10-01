@@ -11,3 +11,13 @@ document.getElementById('toggle-ingredients').addEventListener('click', () => {
         ingredientList.style.display = 'none';
     }
 });
+
+// Toggle display of instructions
+document.getElementById('toggle-instructions').addEventListener('click', () => {
+    let instructionList = document.getElementById('instruction-list');
+    if (instructionList.style.display === 'none' || instructionList.style.display === '') {
+        instructionList.style.display = 'block';
+    } else {
+        instructionList.style.display = 'none';
+    }
+});
