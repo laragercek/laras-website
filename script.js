@@ -16,14 +16,18 @@ function toggleIngredients() {
     }
 }
 
-// Toggle display of instructions
-document.getElementById('toggle-instructions').addEventListener('click', () => {
+function toggleInstructions() {
     let instructionList = document.getElementById('instruction-list');
+    let toggleButton = document.getElementById('toggle-instructions');
+    
     if (instructionList.style.display === 'none' || instructionList.style.display === '') {
         instructionList.style.display = 'block';
+        toggleButton.textContent = 'Hide Instructions';
     } else {
         instructionList.style.display = 'none';
+        toggleButton.textContent = 'Show Instructions';
     }
-});
+}
 
 document.getElementById('toggle-ingredients').addEventListener('click', toggleIngredients);
+document.getElementById('toggle-instructions').addEventListener('click', toggleInstructions);
