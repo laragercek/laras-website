@@ -3,13 +3,19 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: #dac1c1;
 }
 .header {
-    background-color: #46afa5;
-    color: #fff;
-    padding: 20px;
+    background-color: rgba(244, 81, 81, 0.7);
+    padding: 60px 20px;  
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  
+}
+
+.header-title {
+    color: #ecf0f1;  
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .content {
